@@ -1,4 +1,6 @@
-export interface Housinglocation {
+export interface HousingLocationInterface {
+    // Definir estructura de datos esperada de un objeto
+    // A través de propiedades
     id: number;
     name: string;
     city: string;

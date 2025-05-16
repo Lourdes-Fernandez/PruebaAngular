@@ -1,11 +1,12 @@
 <main class="main">
-  <header class="brand-home">
-    <img class="brand-logo" src="assets/fav.svg" alt="logo">
-  </header>
+  <a routerLink="/"> <!-- Navegar como resultado de alguna acción del usr -->
+    <header class="brand-home">
+      <img class="brand-logo" src="assets/fav.svg" alt="logo">
+    </header>
+  </a>
 
   <section class="content">
-    <app-home></app-home>
+    <router-outlet />
+    <!-- Directiva que actúa como un marcador de posición de dónde el enrutador debe mostrar los componentes -->
   </section>
 </main>
-
-<router-outlet />

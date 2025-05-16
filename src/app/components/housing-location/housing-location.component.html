@@ -1,5 +1,8 @@
-<section>
-    <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{housingLocation.name}}">
-    <h2 class="listing-heading">{{housingLocation.name}}</h2>
-    <p class="listing-location">{{housingLocation.city}}, {{housingLocation.state}}</p>
+<section class="listing">
+    <!-- Interpolación de datos a través del Input-->
+    <img class="listing-photo" [src]="housingLocationInput.photo" alt="Exterior photo of {{housingLocationInput.name}}">
+    <h2 class="listing-heading">{{housingLocationInput.name}}</h2>
+    <p class="listing-location">{{housingLocationInput.city}}, {{housingLocationInput.state}}</p>
+    <a [routerLink]="['/details', housingLocationInput.id]" routerLinkActive="router-link-active">Learn
+        More</a>
 </section>
